@@ -1,0 +1,83 @@
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url("../fonts/DMSerifDisplay-Regular.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DM Serif Text';
+  src: url("../fonts/DMSerifText-Regular.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Font Awesome 5 Brands';
+  src: url("../fonts/FontAwesome5Brands-Regular.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-Medium.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Inter';
+  src: url("../fonts/Inter-SemiBold.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Light.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Regular.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Medium.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-SemiBold.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Jost';
+  src: url("../fonts/Jost-Bold.woff2") format('woff2');
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+
+/* 
+:root {
+  --font-family: "", sans-serif;
+  --second-family: "", sans-serif;
+  --third-family: "", sans-serif;
+  --font3: "", sans-serif;
+  --font4: "", sans-serif;
+} */
