@@ -1,0 +1,17 @@
+:root {
+  --white: #fff;
+  --white-text: #fff;
+  --dark: #292F36;
+  --dark-text: #292F36;
+  --main-biege: #D8A876;
+  --second-biege: #CDA274;
+  --active-biege: #C76904;
+  --gray-text: #4d5053;
+  --gray: #4d5053;
+
+  --font-family: "Jost", sans-serif;
+  --second-family: "DM Serif Display", sans-serif;
+  --third-family: "Font Awesome 5 Brands", sans-serif;
+  --font3: "Inter", sans-serif;
+  --font4: "DM Serif Text", sans-serif;
+}
