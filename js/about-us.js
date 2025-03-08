@@ -61,7 +61,6 @@ caruoselRow.addEventListener('transitionend', function(){
 })
 
 //  auto sliding
-
 function autoSlide(){
 deleteInterval = setInterval(timer, 4000);
 function timer(){
@@ -79,14 +78,16 @@ mainContainer.addEventListener('mouseover', function(){
 })
 
 //resume sliding when mouse is out 
-mainContainer.addEventListener('mouseout', autoSlide);
 
 
-function dotsLabel(){
-  for(i = 0; i < dots.length; i++){
-    dots[i].className = dots[i].className.replace(' active--dot', '');
+function dotsLabel() {
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('active--dot');
   }
-  dots[index - 1].className += ' active--dot';
+  
+  if (index - 1 >= 0 && index - 1 < dots.length) {
+    dots[index - 1].classList.add('active--dot');
+  }
 }
 
 

@@ -1,0 +1,163 @@
+
+
+.hero-services{
+background-image: url("/images/services/hero-bg.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+width: 100%;
+height: 356px;
+margin-top: 66px;
+position: relative;
+}
+
+.hero-text {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+}
+
+.hero-serv__title {
+  font-size: 70px;
+  color: var(--white);
+}
+
+.works-wrapper {
+ margin-top: 100px;
+ margin-bottom: 210px;
+
+}
+
+.works-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.works-card {
+  text-align: center;
+  text-decoration: none;
+  color: var(--dark);
+  padding: 80px 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+.works-card:hover {
+  color: var(--active-biege);
+  background-color:#f9f9f9 ;
+  border-radius: 30px;
+}
+.card-wrapper__title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.card-text {
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  max-width: 358px;
+  margin-bottom: 52px;
+}
+
+.card-wrapper__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-wrapper__button span {
+  font-weight: 600;
+  font-size: 18px;
+  margin-right: 10px;
+
+}
+
+
+.works-card svg path {
+  stroke: var(--dark);
+  /* цвет по умолчанию для иконки */
+  transition: stroke 0.3s ease;
+}
+
+.works-card:hover svg path {
+  stroke: var(--active-biege);
+  /* цвет иконки при наведении */
+}
+
+
+.how-wrapper {
+  margin-bottom: 150px;
+}
+
+.item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 121px;
+  position: relative;
+}
+
+.item span {
+  font-family: var(--second-family);
+  font-size: 90px;
+  letter-spacing: 0.01em;
+  color: #c76904;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.item--reverse {
+  flex-direction: row-reverse;
+}
+
+.item--reverse span {
+  left: 0;
+}
+
+
+.item:nth-last-of-type {
+  margin-bottom: 0;
+}
+
+.item-img {
+  width: 100%;
+  height: auto;
+}
+
+.item-img img {
+  width: 100%;
+  height: auto;
+  /* max-width: 100%;  */
+  border-radius: 0 300px 0 400px;
+}
+
+.item-img--reverse img {
+  border-radius: 300px 0 400px 0;
+}
+
+.item-text {
+  max-width: 456px;
+  padding-bottom: 81px;
+}
+
+.item-descr__title {
+  font-size: 35px;
+  line-height: 125%;
+  color: var(--dark);
+  margin-bottom: 11px;
+  margin-top: 10px;
+
+}
+
+.item-descr {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: var(--gray-text);
+}
