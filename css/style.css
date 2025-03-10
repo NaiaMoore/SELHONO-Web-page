@@ -109,7 +109,6 @@ ul {
   font-family: var(--font3);
   font-size: 18px;
   line-height: 125%;
-  letter-spacing: 2%;
   text-align: center;
   transition: 0.3s all ease-in-out;
 }
@@ -365,7 +364,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  row-gap: 20px;
+  gap: 20px;
   max-width: 1158px;
 
 }
@@ -374,7 +373,7 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 358px;
+  max-width: 358px;
 }
 
 .work__title {
@@ -433,13 +432,10 @@ ul {
 .create-text {
   padding: 142px 0 0 25px;
   max-width: 385px;
-
-
 }
 
 .create__title {
   font-size: 55px;
-  line-height: 125%;
   color: var(--white-text);
 }
 
@@ -488,7 +484,6 @@ ul {
 .create__info-phone {
   font-weight: 700;
   font-size: 24px;
-  line-height: 150%;
   letter-spacing: 0.01em;
   color: var(--white-text);
 }
@@ -496,7 +491,6 @@ ul {
 .create__info-text {
   font-weight: 500;
   font-size: 22px;
-  line-height: 150%;
   letter-spacing: 0.01em;
   color: #fff;
 }
@@ -719,9 +713,10 @@ ul {
 
 .record-wrapper {
   display: flex;
-  align-items: flex-start;
-  flex-wrap: nowrap;
-  gap: 76px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
   padding: 151px 64px;
 }
 
@@ -730,7 +725,6 @@ ul {
   flex-direction: column;
   text-align: center;
   padding-right: 10px;
-  width: 100%;
 }
 
 .record__number {
