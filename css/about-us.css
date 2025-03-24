@@ -269,7 +269,7 @@
 }
 
 .btn-box {
-  box-shadow: 0 10px 20px 0 rgba(192, 192, 192, 0.35);
+  box-shadow: 0 10px 10px 0 rgba(192, 192, 192, 0.35);
 }
 
 .form-btn {
@@ -278,7 +278,6 @@
   align-items: center;
   padding: 26px 54px;
   border-radius: 18px;
-  margin-top: 51px;
   font-size: 18px;
   transition: all 0.3s ease-in;
   cursor: pointer;
@@ -294,4 +293,16 @@
 }
 .form-btn:active {
   opacity: 0.7;
+}
+#auto-resize{
+  border: none;
+  width: 100%;
+  min-height: 40px; 
+  max-height: 300px; 
+  resize: none; 
+  overflow-y: hidden; 
+  padding: 10px;
+  font-size: 16px;
+  border-bottom: 2px solid var(--dark);
+  margin-bottom: 50px;
 }

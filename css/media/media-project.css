@@ -1,0 +1,55 @@
+@media (max-width: 500px) {
+  .hero-project-wrapper {
+    margin-top: 0px;
+    height: 250px;
+  }
+
+  .hero-serv__title {
+    font-size: 37px;
+  }
+
+  .tabs-wrapper {
+    padding: 6px 10px;
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .tab__link {
+    font-size: 14px;
+  }
+  .tab__link--active {
+    background-color: var(--second-biege);
+    padding: 6px 10px;
+    color: var(--white-text);
+    border-radius: 10px;
+  }
+
+
+  .project-page-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 30px;
+  }
+
+  .pages-wrapper {
+    max-width: 60%;
+    margin-bottom: 90px;
+  }
+
+  .pages {
+    width: 100%;
+    height: 100%;
+  }
+
+  .page {
+    width: 35px;
+    height: 35px;
+  }
+
+  .page__link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+}

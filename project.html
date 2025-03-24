@@ -14,7 +14,7 @@
 <body class="body-page">
 
   <!-- ===============HEADER======================== -->
-  <header class="header">
+  <header class="header header_about-us">
     <div class="container  ">
       <div class="header__container">
         <a href="./index.html" class="logo__header">
@@ -22,7 +22,7 @@
         </a>
         <div class="header__wrapper">
           <nav class="nav">
-            <ul class="nav_list list-reset">
+            <ul data-visible="false" id="primary-nav" class="nav_list list-reset">
               <li class="nav__item nav__item--active"><a href="./index.html" class="nav__link">Home </a></li>
               <li class="nav__item"><a href="" class="nav__link"> Pages</a></li>
               <li class="nav__item"><a href="./services.html" class="nav__link">Services </a></li>
@@ -32,13 +32,9 @@
             </ul>
           </nav>
         </div>
-        <div class="burger ">
-          <span></span>
-        </div>
-
-        <div class="burger ">
-          <span></span>
-        </div>
+        <button aria-expanded="false" aria-controls="primary-nav" class="burger">
+          <div class="burger__line"></div>
+        </button>
 
 
         <div class="header__search ">

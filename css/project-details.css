@@ -1,5 +1,5 @@
 .project-details-wrapper {
-  background-image: url("/images/Project/proj-details-bg.jpg");
+  background-image: url("./../images/Project/proj-details-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

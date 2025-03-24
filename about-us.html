@@ -10,7 +10,7 @@
 </head>
 
 <body class="body-page ">
-
+  <!-- ===============HEADER======================== -->
   <header class="header header_about-us">
     <div class="container  ">
       <div class="header__container">
@@ -19,19 +19,20 @@
         </a>
         <div class="header__wrapper">
           <nav class="nav">
-            <ul class="nav_list list-reset">
+            <ul data-visible="false" id="primary-nav" class="nav_list list-reset">
               <li class="nav__item nav__item--active"><a href="./index.html" class="nav__link">Home </a></li>
               <li class="nav__item"><a href="" class="nav__link"> Pages</a></li>
               <li class="nav__item"><a href="./services.html" class="nav__link">Services </a></li>
-              <li class="nav__item"><a href="" class="nav__link">Project </a></li>
+              <li class="nav__item"><a href="./project.html" class="nav__link">Project </a></li>
               <li class="nav__item"><a href="" class="nav__link">Blog </a></li>
               <li class="nav__item"><a href="" class="nav__link">Contact </a></li>
             </ul>
           </nav>
         </div>
-        <div class="burger ">
-          <span></span>
-        </div>
+        <button aria-expanded="false" aria-controls="primary-nav" class="burger">
+          <div class="burger__line"></div>
+        </button>
+
 
         <div class="header__search ">
           <form class="search">
@@ -54,6 +55,7 @@
         </div>
       </div>
     </div>
+
   </header>
 
   <main>
@@ -65,13 +67,13 @@
 
 
           <button class="about-corusel__btn btn-reset btn-next">
-            <svg width="42" height="74" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 42 74" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M40.5355 40.5355C42.4882 38.5829 42.4882 35.4171 40.5355 33.4645L8.71573 1.64466C6.76311 -0.307961 3.59728 -0.307961 1.64466 1.64466C-0.307961 3.59728 -0.307961 6.76311 1.64466 8.71573L29.9289 37L1.64466 65.2843C-0.307961 67.2369 -0.307961 70.4027 1.64466 72.3553C3.59728 74.308 6.76311 74.308 8.71573 72.3553L40.5355 40.5355ZM36 42H37V32H36V42Z" />
             </svg>
           </button>
           <button class="about-corusel__btn btn-reset btn-prev">
-            <svg width="42" height="74" xmlns="http://www.w3.org/2000/svg">
+            <svg viewBox="0 0 42 74" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M1.46447 33.4645C-0.488155 35.4171 -0.488155 38.5829 1.46447 40.5355L33.2843 72.3553C35.2369 74.308 38.4027 74.308 40.3553 72.3553C42.308 70.4027 42.308 67.2369 40.3553 65.2843L12.0711 37L40.3553 8.71573C42.308 6.76311 42.308 3.59728 40.3553 1.64466C38.4027 -0.307961 35.2369 -0.307961 33.2843 1.64466L1.46447 33.4645ZM6 32H5L5 42H6L6 32Z" />
             </svg>
@@ -265,7 +267,7 @@
 
           <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post"
             enctype="multipart/form-data">
-            <h2 class="form__title title--dark">Creative project? Let's have
+            <h2 class="form__title title--dark">Creative project? <br>Let's have
               a productive talk.</h2>
 
             <div class="form-top">
@@ -282,7 +284,7 @@
             </div>
 
             <div class="form-input">
-              <input type="text" name="name" placeholder="Message">
+              <textarea id="auto-resize" type="text" name="name" placeholder="Message"></textarea>
               <label ></label>
             </div>
 

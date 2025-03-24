@@ -147,54 +147,60 @@ ul {
 
 
 .burger {
-  display: none;
   position: relative;
+  cursor: pointer;
+  display: flex;
+  border: none;
+  background-color: transparent;
   z-index: 50;
-  align-items: center;
-  justify-content: flex-end;
   width: 30px;
-  height: 23px;
+  height: 35px;
 
 }
 
-.burger span {
+.burger__line {
+  position: absolute;
+  right: 0;
+
   height: 2px;
   width: 100%;
-  transform: scale(1);
   background-color: var(--dark);
 }
 
-.burger::before {
+.burger__line::before {
   position: absolute;
   content: '';
+  right: 0;
+  top: 12px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--dark);
+  transition: all 0.3s ease 0s;
+}
+
+.burger__line::after {
+  position: absolute;
+  content: '';
+  right: 0;
+  bottom: 12px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--dark);
+  transition: all 0.3s ease 0s;
+}
+
+
+.burger[aria-expanded="true"] .burger__line{
+  height: 0;
+}
+
+.burger[aria-expanded="true"] .burger__line::before {
   top: 0;
-  height: 2px;
-  width: 100%;
-  background-color: var(--dark);
-  transition: all 0.3s ease 0s;
-}
-
-.burger::after {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  height: 2px;
-  width: 100%;
-  background-color: var(--dark);
-  transition: all 0.3s ease 0s;
-}
-
-.burger.active span {
-  transform: scale(0);
-}
-
-.burger.active::before {
-  top: 50%;
   transform: rotate(-45deg) translate(0, -50%);
 }
 
-.burger.active::after {
-  bottom: 50%;
+.burger[aria-expanded="true"] .burger__line::after {
+  bottom: 0;
   transform: rotate(45deg) translate(0, 50%);
 }
 
@@ -214,6 +220,11 @@ ul {
 
 .logo__header {
   max-width: 227px;
+}
+.logo__header img{
+  width: 100%;
+  height: 100%;
+
 }
 
 .header__wrapper {
