@@ -12,7 +12,6 @@
 <body class="body-page ">
 
   <!-- ===============HEADER======================== -->
-
   <header class="header">
     <div class="container  ">
       <div class="header__container">
@@ -21,19 +20,20 @@
         </a>
         <div class="header__wrapper">
           <nav class="nav">
-            <ul class="nav_list list-reset">
+            <ul data-visible="false" id="primary-nav" class="nav_list list-reset">
               <li class="nav__item nav__item--active"><a href="./index.html" class="nav__link">Home </a></li>
               <li class="nav__item"><a href="" class="nav__link"> Pages</a></li>
               <li class="nav__item"><a href="./services.html" class="nav__link">Services </a></li>
-              <li class="nav__item"><a href="" class="nav__link">Project </a></li>
+              <li class="nav__item"><a href="./project.html" class="nav__link">Project </a></li>
               <li class="nav__item"><a href="" class="nav__link">Blog </a></li>
               <li class="nav__item"><a href="" class="nav__link">Contact </a></li>
             </ul>
           </nav>
         </div>
-        <div class="burger ">
-          <span></span>
-        </div>
+        <button aria-expanded="false" aria-controls="primary-nav" class="burger">
+          <div class="burger__line"></div>
+        </button>
+
 
         <div class="header__search ">
           <form class="search">
@@ -56,26 +56,25 @@
         </div>
       </div>
     </div>
+
   </header>
+
 
   <main>
 
     <!-- ===============HERO======================== -->
-    <section class="hero-serv">
-    
-      <div class="hero-services">
-        <div class="hero-text">
-          <h1 class="hero-serv__title title--dark">
-            Services
-          </h1>
-        </div>
-      </div>
-    </section>
+
+    <section class="hero-pages services-hero">
+      <h1 class="hero-pages___title  ">
+        Services
+      </h1>
+</section>
+
 
     <!-- ===============WORKS======================== -->
     <div class="container">
       <div class="works-wrapper">
-        <div class="works-row">
+
 
           <a href="./singleservices.html" class="works-card">
             <div class="card-wrapper">
@@ -128,9 +127,7 @@
               </div>
             </div>
           </a>
-        </div>
 
-        <div class="works-row">
 
           <a href="./singleservices.html" class="works-card">
             <div class="card-wrapper">
@@ -186,7 +183,7 @@
 
 
 
-        </div>
+    
 
       </div>
     </div>

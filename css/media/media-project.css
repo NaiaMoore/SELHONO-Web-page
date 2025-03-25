@@ -1,4 +1,9 @@
 @media (max-width: 500px) {
+
+  .single-serv {
+    height: 250px;
+}
+
   .hero-project-wrapper {
     margin-top: 0px;
     height: 250px;
@@ -8,20 +13,23 @@
     font-size: 37px;
   }
 
-  .tabs-wrapper {
-    padding: 6px 10px;
+ 
+  .tabs{
     max-width: 100%;
-    border-radius: 10px;
+    border-radius: 6px;
   }
-
   .tab__link {
     font-size: 14px;
+    max-width: 105px;
+    text-align: center;
   }
   .tab__link--active {
+    width: 100%;
     background-color: var(--second-biege);
-    padding: 6px 10px;
+    border: 1px solid var(--second-biege);
+    padding: 12px 8px;
     color: var(--white-text);
-    border-radius: 10px;
+    border-radius: 4px;
   }
 
 
@@ -31,7 +39,7 @@
   }
 
   .pages-wrapper {
-    max-width: 60%;
+    max-width: 74%;
     margin-bottom: 90px;
   }
 
@@ -50,6 +58,30 @@
     align-items: center;
     justify-content: center;
   }
+
+  .project-page__img {
+    max-height: 400px;
+    height: auto;
+    object-fit: cover;
+}
+
+.info-decr__title {
+  font-size: 20px;
+}
+.project-page__text {
+  font-size: 18px;
+}
+.project-page__info-link {
+  width: 50px;
+  height: 50px;
+}
+
+.project-page__info-link::before {
+  width: 16px;
+  height: 16px;
+  left: 28%;
+  top: 34%;
+}
 
 
 }

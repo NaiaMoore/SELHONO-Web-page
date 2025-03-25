@@ -21,19 +21,20 @@
         </a>
         <div class="header__wrapper">
           <nav class="nav">
-            <ul class="nav_list list-reset">
+            <ul data-visible="false" id="primary-nav" class="nav_list list-reset">
               <li class="nav__item nav__item--active"><a href="./index.html" class="nav__link">Home </a></li>
               <li class="nav__item"><a href="" class="nav__link"> Pages</a></li>
               <li class="nav__item"><a href="./services.html" class="nav__link">Services </a></li>
-              <li class="nav__item"><a href="" class="nav__link">Project </a></li>
+              <li class="nav__item"><a href="./project.html" class="nav__link">Project </a></li>
               <li class="nav__item"><a href="" class="nav__link">Blog </a></li>
               <li class="nav__item"><a href="" class="nav__link">Contact </a></li>
             </ul>
           </nav>
         </div>
-        <div class="burger ">
-          <span></span>
-        </div>
+        <button aria-expanded="false" aria-controls="primary-nav" class="burger">
+          <div class="burger__line"></div>
+        </button>
+
 
         <div class="header__search ">
           <form class="search">
@@ -50,23 +51,25 @@
             </div>
 
           </form>
+
+
+
         </div>
       </div>
     </div>
+
   </header>
+
+
+
   <main>
     <!-- ===============HERO======================== -->
-    <section class="single-serv">
 
-      <div class="hero-single-wrapper">
-        <div class=" hero-text">
-
-          <h1 class="hero-serv__title title--dark">
-            Single Services
-          </h1>
-        </div>
-      </div>
-    </section>
+    <section class="hero-pages single-serv-hero">
+      <h1 class="hero-pages___title ">
+        Single Services
+      </h1>
+</section>
 
     <!-- ===============BENEFIT======================== -->
     <section>
