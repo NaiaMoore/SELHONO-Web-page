@@ -149,7 +149,7 @@
   }
 
   .descr-image__img {
-    border-radius: 30px;
+    border-radius: 10px;
   }
 
   .descr-image__btn {
@@ -169,7 +169,7 @@
     font-size: 20px;
   }
   .slider {
-    height: 150px;
+    height: 200px;
   }
   .btn-modal {
     width: 30px;

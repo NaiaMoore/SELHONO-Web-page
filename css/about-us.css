@@ -21,6 +21,7 @@
   position: relative;
   object-fit: contain;
   overflow: hidden;
+  margin-top: 50px;
 }
 
 .corusel-wrapper .about-swiper {
@@ -107,6 +108,7 @@
   height: 100%;
   border-left: 3px solid var(--dark);
   border-right: 3px solid var(--dark);
+  padding: 0 3px;
 }
 
 .quote_text {
@@ -215,7 +217,7 @@
   background-color: var(--active-biege);
 }
 
-.form{
+.form {
   width: 100%
 }
 
@@ -247,12 +249,12 @@
   transition: all 0.3s ease-in;
 }
 
-.form-box .form-input input:focus{
+.form-box .form-input input:focus {
   font-size: 30px;
   border-bottom: 2px solid var(--active-biege);
 }
 
-.form-box .form-input input:hover{
+.form-box .form-input input:hover {
   box-shadow: 0 2px 2px 0 rgba(192, 192, 192, 0.4);
 }
 
@@ -291,16 +293,18 @@
 .form-btn:hover {
   background-color: var(--active-biege);
 }
+
 .form-btn:active {
   opacity: 0.7;
 }
-#auto-resize{
+
+#auto-resize {
   border: none;
   width: 100%;
-  min-height: 40px; 
-  max-height: 300px; 
-  resize: none; 
-  overflow-y: hidden; 
+  min-height: 40px;
+  max-height: 300px;
+  resize: none;
+  overflow-y: hidden;
   padding: 10px;
   font-size: 16px;
   border-bottom: 2px solid var(--dark);

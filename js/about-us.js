@@ -1,5 +1,4 @@
 
-
 const caruoselRow = document.querySelector('.about-swiper');
 const caruoselSlides = document.getElementsByClassName('slide');
 const dots = document.getElementsByClassName('dot');
@@ -19,7 +18,15 @@ sliderWidth()
 window.addEventListener('resize', sliderWidth);
 caruoselRow.style.transform = 'translateX('+ (- width * index) + 'px)';
 
-
+function dotsLabel() {
+  for (let i = 0; i < dots.length; i++) {
+    dots[i].classList.remove('active--dot');
+  }
+  
+  if (index - 1 >= 0 && index - 1 < dots.length) {
+    dots[index - 1].classList.add('active--dot');
+  }
+}
 
 nextBtn.addEventListener("click", nextSlide);
 function nextSlide(){
@@ -30,7 +37,6 @@ function nextSlide(){
   dotsLabel();
  }
 
-
 prevBtn.addEventListener("click", prevSlide);
 function prevSlide(){
   if(index <= 0){return};
@@ -40,7 +46,6 @@ function prevSlide(){
   dotsLabel();
 
  }
-
 //  возвращение на первый слайд после последнего слайда
 caruoselRow.addEventListener('transitionend', function(){
   if(caruoselSlides[index].id==='firstImageDuplicate'){
@@ -80,15 +85,30 @@ mainContainer.addEventListener('mouseover', function(){
 //resume sliding when mouse is out 
 
 
-function dotsLabel() {
-  for (let i = 0; i < dots.length; i++) {
-    dots[i].classList.remove('active--dot');
+
+// slide touch
+
+let startX = 0;
+let endX = 0;
+
+caruoselRow.addEventListener('touchstart', (event) =>{
+startX = event.touches[0].clientX
+});
+caruoselRow.addEventListener('touchmove', (event) =>{
+endX = event.touches[0].clientX
+});
+
+caruoselRow.addEventListener('touchend', () =>{
+  if (startX - endX > 50){
+    nextSlide();
+    
+  }else if(endX - startX > 50 ){
+    prevSlide();
   }
-  
-  if (index - 1 >= 0 && index - 1 < dots.length) {
-    dots[index - 1].classList.add('active--dot');
-  }
-}
+});
+
+
+
 
 
 
