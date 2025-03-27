@@ -67,12 +67,19 @@ caruoselRow.addEventListener('transitionend', function(){
 
 //  auto sliding
 function autoSlide(){
-deleteInterval = setInterval(timer, 4000);
-function timer(){
-  nextSlide()
-}
+  if (window.innerWidth >= 500){
+    deleteInterval = setInterval(timer, 4000);
+    function timer(){
+      nextSlide()
+    }
+  }
+
 }
 autoSlide();
+window.addEventListener("resize", () => {
+  clearInterval(deleteInterval); 
+  autoSlide(); 
+});
 
 //Stop auto sliding whem mouse is over
 

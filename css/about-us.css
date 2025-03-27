@@ -43,12 +43,14 @@
 
 .about-corusel__btn svg {
   fill: var(--white);
+  height: 40px;
+
 }
 
 .btn-next {
   position: absolute;
   top: 50%;
-  right: 35px;
+  right: 10px;
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 5;
@@ -58,7 +60,7 @@
 .btn-prev {
   position: absolute;
   top: 50%;
-  left: 35px;
+  left: 10px;
   transform: translateY(-50%);
   z-index: 5;
   transition: fill .3s ease-in;

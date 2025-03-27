@@ -8,7 +8,6 @@
   <link rel="stylesheet" href="./css/main.css">
   <!-- фавикон -->
   <link rel="icon" href="./images/icons/favicon.png" type="image/png">
-
 </head>
 
 <body class="body-page">
@@ -27,7 +26,7 @@
               <li class="nav__item"><a href="./about-us.html" class="nav__link"> About us</a></li>
               <li class="nav__item"><a href="./services.html" class="nav__link">Services </a></li>
               <li class="nav__item"><a href="./project.html" class="nav__link">Project </a></li>
-              <li class="nav__item"><a href="./blog.html" class="nav__link">Blog </a></li>
+              <li class="nav__item"><a href="" class="nav__link">Blog </a></li>
               <li class="nav__item"><a href="" class="nav__link">Contact </a></li>
             </ul>
           </nav>
@@ -60,136 +59,133 @@
     </div>
 
   </header>
-
   <!-- ===============MAIN======================== -->
   <main>
-    <!-- ===============HERO======================== -->
-
-    <section class=" hero-pages project-details">
+    <section class=" hero-pages blog">
       <h1 class="hero-pages___title ">
-        Project Details
+        Articles& News
       </h1>
     </section>
+    <!-- ===============search======================== -->
+    <div class="container">
+      <form class="blog-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+        <label for="search"></label>
+        <input type="text" placeholder="Search">
+        <button class="blog-search-btn">
+          <svg viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M26.5881 24.2898L20.4826 18.1691C21.9525 16.2073 22.746 13.8195 22.7434 11.3659C22.7434 5.09879 17.6573 0 11.4059 0C5.1544 0 0.0683594 5.09879 0.0683594 11.3659C0.0683594 17.633 5.1544 22.7318 11.4059 22.7318C13.8533 22.7345 16.2352 21.939 18.192 20.4654L24.2975 26.5862C24.6065 26.8631 25.0096 27.011 25.424 26.9994C25.8384 26.9877 26.2326 26.8175 26.5257 26.5237C26.8188 26.2298 26.9886 25.8346 27.0002 25.4192C27.0118 25.0038 26.8643 24.5997 26.5881 24.2898ZM3.30765 11.3659C3.30765 9.76023 3.7826 8.1906 4.67244 6.85552C5.56229 5.52043 6.82705 4.47986 8.30681 3.86539C9.78657 3.25092 11.4148 3.09015 12.9857 3.4034C14.5566 3.71666 15.9996 4.48987 17.1322 5.62526C18.2647 6.76066 19.036 8.20724 19.3485 9.78208C19.6609 11.3569 19.5006 12.9893 18.8876 14.4727C18.2747 15.9562 17.2367 17.2241 15.905 18.1162C14.5732 19.0083 13.0075 19.4844 11.4059 19.4844C9.25887 19.4818 7.20056 18.6257 5.6824 17.1037C4.16425 15.5818 3.31022 13.5183 3.30765 11.3659Z" />
+          </svg>
 
-    <!-- ===============DESCR======================== -->
-    <section>
+        </button>
+
+      </form>
+
+    </div>
+    <!-- ===============Section Latest post======================== -->
+
+    <section class="latest">
       <div class="container">
-        <div class="descr-wrapper">
-          <div class="descr-column__left">
-            <div class="column-name">
-              <ul class="descr-column__name">
-                <li class="column__item">Client</li>
-                <li class="column__item">Category</li>
-                <li class="column__item">Tags</li>
-                <li class="column__item">Date</li>
-                <li class="column__item">Link </li>
-              </ul>
-            </div>
-
-            <div class="column-descr">
-              <ul class="column-descr__text">
-                <li class="column__item">Your&nbsp;client&nbsp;name</li>
-                <li class="column__item">VIP</li>
-                <li class="column__item">VIP&nbsp;,&nbsp;Home</li>
-                <li class="column__item">Date&nbsp;23,02,&nbsp;2022</li>
-                <li class="column__item">Link&nbsp;example.com</li>
-              </ul>
-
-
-
-
-            </div>
-
-
-
+        <h2 class="latest__title title--dark">Latest Post</h2>
+        <div class="latest-wrapper">
+          <div class="latest-img">
+            <img src="./images/blog/latest-post.jpg" alt="">
           </div>
-          <div class="descr-column-right">
-            <h3 class="descr-column__title">
-              Minimal Look Bedrooms
-            </h3>
-            <div class="descr-column__text">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquamsem vitae turpis dignissim maximus.
-                Aliquam sollicitudin tellumassa, vbel maximus purus posuere&nbsp;in. Dojrices gravida dignissim.
-                Praesent at&nbsp;nibh in&nbsp;mi&nbsp;fringilla mattis. Phasellus ut&nbsp;dolor odio. Aenean in&nbsp;the
-                ipsum vel lectus bibendum commodo.
-              </p>
-              <p>
-                In nec sem suscipit, convallis leo vitae, lacinia nibh. Cras amet tellus lectus. Vivamus ipsum nunc,
-                mattis quis nibh id, pellentesque arcu. Donec a pellentesque Cras erat enim, gravida non ante
-                vitae,elequis convallis elit, in viverra felis. Donec ultrices tellus vitae iaculisvd porta. Proin
-                tincidunt ligula id purus porttitor.
+          <div class="latest-descr">
+            <h4 class="latest-descr__title title--dark">Low Cost Latest Invented Interior Designing Ideas</h4>
+            <div class="latest-descr-text">
+              <p>Lorem ipsum dolor sit amet, adipiscing Aliquam eu&nbsp;sem vitae turpis dignissim maximus.posuere
+                in.Contrary to&nbsp;popular belief.</p>
+              <p>Lorem Ipsum is&nbsp;not simply random text. It&nbsp;has roots in&nbsp;a&nbsp;piece of&nbsp;classica.
               </p>
             </div>
-
+            <div class="latest-descr-date">
+              <data value="">26 December,2022 </data>
+              <a class="latest-search" href="#">
+                <svg viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.77199 14.6855L7.71484 7.99983L1.77199 1.31412" stroke="" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
 
           </div>
-
-
-
         </div>
+
       </div>
+
     </section>
 
-    <!-- ===============DESCR-IMAGE======================== -->
-    <div class="container">
-      <div class="descr-img-wrapper">
-        <button class="btn-reset descr-image__btn">
-          <svg viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M36.4329 29.2216L28.0452 21.9667C30.0646 19.6415 31.1547 16.8112 31.151 13.903C31.151 6.47468 24.1638 0.431152 15.5755 0.431152C6.98723 0.431152 0 6.47468 0 13.903C0 21.3314 6.98723 27.3749 15.5755 27.3749C18.9378 27.3781 22.21 26.4352 24.8984 24.6885L33.2861 31.9434C33.7107 32.2717 34.2644 32.4469 34.8337 32.4331C35.403 32.4193 35.9445 32.2176 36.3472 31.8693C36.7499 31.521 36.9832 31.0526 36.9991 30.5602C37.0151 30.0678 36.8125 29.5888 36.4329 29.2216ZM4.45015 13.903C4.45015 11.9998 5.10264 10.1394 6.32511 8.5569C7.54758 6.97444 9.28513 5.74107 11.318 5.01275C13.3509 4.28442 15.5879 4.09386 17.746 4.46516C19.9041 4.83645 21.8864 5.75293 23.4423 7.0987C24.9983 8.44447 26.0578 10.1591 26.4871 12.0257C26.9164 13.8923 26.6961 15.8272 25.854 17.5855C25.012 19.3438 23.586 20.8467 21.7564 21.9041C19.9269 22.9614 17.7759 23.5258 15.5755 23.5258C12.626 23.5227 9.79825 22.5079 7.7126 20.704C5.62696 18.9 4.45369 16.4542 4.45015 13.903Z"
-              fill="#CDA274" />
-          </svg>
-        </button>
-        <img data-full="full-project" class="descr-image__img" src="./images/Project/proj-details-1.jpg" alt="#">
-
-      </div>
-    </div>
-
-
-    <!-- ===============Modal-IMAGE======================== -->
-     <div id="modal" class="modal">
+    <section class="all-post">
       <div class="container">
-        <span class="modal-close">&times;</span>
-        <div id="fullContent" class="slider-modal-wrapper modal-content">
-          <div class="slider">
-            <div class="slider-line">
-              <div class="slide-img">
-                <img src="./images/Project/proj-details-1.jpg" alt="">
-              </div>
-              <div class="slide-img">
-                <img src="./images/Project/proj-details-2.jpg" alt="">
-              </div>
-              <div class="slide-img">
-                <img src="./images/Project/proj-details-3.jpg" alt="">
-              </div>
-              <div class="slide-img">
-                <img src="./images/Project/proj-details-4.jpg" alt="">
-              </div>
+        <h2 class="latest__title title--dark">Articles &amp;&nbsp;News</h2>
+
+        <div class="article-wrapper">
+          <div class="article-card">
+            <div class="article-img">
+              <img src="./images/blog/blog-articles-1.jpg" alt="#" class="article-card__img">
             </div>
-            <button class="btn-modal-prev btn-modal">
-              <svg viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8.5 1L1.5 8L8.5 15" stroke="" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-            <button class="btn-modal-next btn-modal">
-              <svg viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.5 1L8.5 8L1.5 15" stroke="" stroke-width="2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </button>
-      
+            <h6 class="article-card__title  title--dark">Let&rsquo;s Get Solution For Building Construction Work</h6>
+
+            <div class="article-info">
+              <time datetime="2022-11-22">26 December,2022 </time>
+
+              <div class="article__info-link all-post-btn circle--btn">
+                <a class="article__info-btn " href="#"></a>
+              </div>
+
+            </div>
+
           </div>
-    
-  
-        </div>
+          <div class="article-card">
+            <div class="article-img">
+              <img src="./images/blog/blog-articles-2.jpg" alt="#" class="article-card__img">
+            </div>
+            <h6 class="article-card__title  title--dark">Let&rsquo;s Get Solution For Building Construction Work</h6>
+
+            <div class="article-info">
+              <time datetime="2022-11-22">26 December,2022 </time>
+
+              <div class="article__info-link all-post-btn circle--btn ">
+                <a class="article__info-btn" href="#"></a>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="article-card">
+            <div class="article-img">
+              <img src="./images/blog/blog-articles-3.jpg" alt="#" class="article-card__img">
+            </div>
+            <h6 class="article-card__title  title--dark">Let&rsquo;s Get Solution For Building Construction Work</h6>
+
+            <div class="article-info">
+              <time datetime="2022-11-22">26 December,2022 </time>
+
+              <div class="article__info-link all-post-btn circle--btn ">
+                <a class="article__info-btn" href="#"></a>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          </div>
+
+
       </div>
-  
-      
-     </div>
+
+
+
+    </section>
+
+
 
   </main>
+
+
+  <!-- ===============Footer======================== -->
 
   <footer class="footer">
     <div class="container">
@@ -278,10 +274,12 @@
       <p class="footer-copyright">Copyright © SELHONO </p>
 
     </div>
+
   </footer>
 
+
+
   <script src="./js/script.js"></script>
-  <script src="./js/project.js"></script>
 </body>
 
 </html>

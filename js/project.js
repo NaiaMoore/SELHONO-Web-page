@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Modal -project-details
+// Modal -project-details-slider
 const prevBtn = document.querySelector('.btn-modal-prev');
 const nextBtn = document.querySelector('.btn-modal-next');
 
@@ -52,6 +52,38 @@ prevBtn.addEventListener('click', () => {
   }
   updateSlider()
 })
+
+
+// Swipe touches
+
+let startX = 0;
+let endX = 0;
+
+slide.addEventListener('touchstart', (event) =>{
+startX = event.touches[0].clientX
+});
+slide.addEventListener('touchmove', (event) =>{
+endX = event.touches[0].clientX
+});
+
+slide.addEventListener('touchend', () =>{
+  if (startX - endX > 50){
+    if (currentSlide < sliderCard.length - 1) {
+      currentSlide++;
+    } else {
+      currentSlide = 0;
+    }
+    updateSlider();
+    
+  }else if(endX - startX > 50 ){
+    if (currentSlide > 0) {
+      currentSlide--;
+    } else {
+      currentSlide = sliderCard.length - 1;
+    }
+    updateSlider()
+  }
+});
 // Modal -close
 
 

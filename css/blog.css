@@ -1,0 +1,145 @@
+.blog {
+  background-image: url("./../images/Project/project-bg.jpg");
+  margin-top: 66px;
+  margin-bottom: 37px;
+}
+
+.blog-form {
+  position: relative;
+  margin: 0 auto;
+  background-color: #f4f0ec;
+  max-width: 850px;
+  border-radius: 20px;
+  padding: 34px 33px;
+  height: 101px;
+  margin-bottom: 54px;
+}
+
+.blog-form input {
+  font-size: 20px;
+  cursor: text;
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 2px 4px;
+  background-color: transparent;
+}
+
+.blog-form input:focus {
+  outline: none;
+  border-bottom: 1px solid var(--second-biege);
+}
+
+.blog-search-btn {
+  position: absolute;
+  content: '';
+  top: 50%;
+  right: 36px;
+  transform: translateY(-50%);
+  background-color: transparent;
+}
+
+.blog-search-btn svg {
+  width: 27px;
+  height: 27px;
+  fill: var(--second-biege);
+}
+
+.blog-form input::placeholder {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: 0.01em;
+  color: var(--second-biege);
+}
+
+.latest {
+  margin-bottom: 140px;
+}
+
+.latest__title {
+  font-size: 50px;
+  letter-spacing: 0.02em;
+  margin-bottom: 34px;
+}
+
+.latest-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+}
+
+.latest-img {
+  max-height: 400px;
+  width: auto;
+}
+
+.latest-img img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.latest-descr {
+  font-size: 22px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4d5053;
+}
+
+.latest-descr p:not(:last-child) {
+  margin-bottom: 20px;
+  height: auto;
+}
+
+
+.latest-descr__title {
+  font-size: 25px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  margin-bottom: 22px;
+
+}
+
+.latest-descr-text {
+  margin-bottom: 40px;
+}
+
+.latest-descr-date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latest-search{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background-color: #f4f0ec;
+}
+
+.latest-search svg {
+  height: 16px;
+  width: auto;
+  stroke: #4d5053;
+}
+.all-post{
+  margin-bottom: 190px;
+}
+.all-post-btn{
+  background-color: #f4f0ec;
+}
+.all-post-btn::before {
+  position: absolute;
+  content: "";
+  left: 15px;
+  top: 19px;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid var(--dark);
+  border-right: 2px solid var(--dark);
+  transform: rotate(45deg);
+}
