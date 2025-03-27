@@ -31,6 +31,10 @@ h6 {
   letter-spacing: 0.02em;
   margin: 0;
 }
+button{
+  border: none;
+  cursor: pointer;
+}
 
 p {
   margin: 0;
@@ -89,8 +93,10 @@ ul {
   font-weight: 400;
   display: flex;
   flex-direction: column;
+
   min-height: 100vh;
 }
+
 
 .container {
   max-width: 1250px;
@@ -147,6 +153,7 @@ ul {
 
 
 .burger {
+  opacity: 0;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -335,7 +342,7 @@ ul {
 /*  ===============MAIN======================== */
 
 .hero-pages___title {
-  padding-top: 60%;
+  transform: translateY(170%);
   font-size: 70px;
   color: var(--white);
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
@@ -363,7 +370,6 @@ ul {
   margin-bottom: 95px;
   min-height: 758px;
   width: 100%;
-
   padding-top: 73px;
   padding-left: 25px;
 }

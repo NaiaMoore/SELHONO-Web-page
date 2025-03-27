@@ -253,7 +253,7 @@
 }
 
 .form-box .form-input input:hover{
-  box-shadow: 0 5px 5px 0 rgba(192, 192, 192, 0.7);
+  box-shadow: 0 2px 2px 0 rgba(192, 192, 192, 0.4);
 }
 
 .form-top {

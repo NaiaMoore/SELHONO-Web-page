@@ -1,16 +1,16 @@
 @media (max-width: 1000px) {
-  .header__container{
+  .header__container {
     position: relative;
   }
 
-  .header__search{
+  .header__search {
     position: absolute;
     left: 20px;
     top: 56px;
     margin-bottom: 30px;
   }
-  
-  
+
+
   .hero {
     margin-top: 30px;
   }
@@ -34,7 +34,8 @@
 
   .hero-pages {
     height: 320px;
-}
+  }
+
   .record__number {
     font-size: 65px;
 
@@ -63,6 +64,15 @@
     margin-bottom: 88px;
 
   }
+  .join__title {
+    font-size: 40px;
+  }
+  .join__text {
+    font-size: 20px;
+  }
+  .btn {
+    padding: 20px 22px;
+}
 
 }
 
@@ -70,15 +80,17 @@
 @media (max-width: 800px) {
   .hero-pages___title {
     font-size: 60px;
-}
+  }
 
 
   .burger {
+    opacity: 1;
     position: absolute;
     display: block;
     right: 40px;
     z-index: 99999;
   }
+
   /* .burger__line{
     background-color: var(--white);
   }
@@ -105,8 +117,8 @@
     transition: transform 400ms ease-in-out;
   }
 
-  .nav_list[data-visible="false"]{
-      transform: translateX(100%);
+  .nav_list[data-visible="false"] {
+    transform: translateX(102%);
   }
 
   .hero__title {
@@ -244,7 +256,8 @@
     display: block;
     right: 10px;
     z-index: 99999;
-}
+  }
+
   .hero {
     padding-top: 50px;
   }
@@ -352,12 +365,13 @@
 @media (max-width: 750px) {
   .hero-pages___title {
     font-size: 40px;
-}
+  }
 
   .btn {
     padding: 20px 30px;
   }
-  .logo__header{
+
+  .logo__header {
     max-width: 200px;
   }
 
@@ -488,6 +502,63 @@
   .footer-copyright {
     font-size: 16px;
   }
+}
 
+
+@media (max-width: 500px) {
+  .header__search {
+    max-width: 250px;
+}
+  .hero-pages {
+    height: 250px;
+  }
+  .hero__title {
+    font-size: 35px;
+}
+.create__title {
+  font-size: 35px;
+}
+.opinion {
+  padding: 60px 0 0px;
+}
+
+.follow-wrapper {
+  padding-bottom: 60px;
+}
+.card__img {
+  border-radius: 0 130px 0 0;
+}
+.project-wrapper {
+  row-gap: 30px;
+}
+.project__info {
+  margin-top: 12px;
+}
+.project__info-link {
+  width: 60px;
+  height: 60px;
+}
+.project__info-link::before {
+  left: 16px;
+  top: 20px;
+}
+.project-wrapper {
+  margin-bottom: 60px;
+}
+.news__title {
+  font-size: 35px;
+}
+.news-wrapper {
+  padding-bottom: 50px;
+}
+.news__descr {
+  font-size: 20px;
+}
+.article-card {
+  border-radius: 50px;
+}
+.join__title {
+  font-size: 35px;
+}
 
 }

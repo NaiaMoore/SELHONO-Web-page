@@ -32,14 +32,6 @@
   .item span {
     font-size: 75px;
   }
-
-  .join__title {
-    font-size: 40px;
-  }
-
-  .join__text {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 1000px) {
@@ -96,13 +88,15 @@
     margin-top: 30px;
     gap: 30px;
   }
+
   .works-card {
     padding: 5px 20px;
-}
+  }
+
   .card-wrapper__title {
     font-size: 20px;
     margin-bottom: 12px;
-}
+  }
 
   .card-text {
     font-size: 18px;
@@ -130,6 +124,179 @@
     align-items: flex-end;
 
   }
+
+}
+
+/* single services */
+@media (max-width: 1200px) {
+  .portf-descr__title {
+    font-size: 40px;
+  }
+
+  .portf-descr__text {
+    font-size: 20px;
+    padding-bottom: 25px;
+  }
+
+
+}
+
+@media (max-width: 900px) {
+  .portf-descr__title {
+    font-size: 30px;
+  }
+
+  .portf-descr__text {
+    font-size: 18px;
+    padding-bottom: 25px;
+  }
+
+  .work-left__btn {
+    font-size: 18px;
+    padding: 20px 26px;
+  }
+
+  .benefit-title {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+
+  .benefit_subtitle {
+    font-size: 22px;
+    margin-bottom: 40px;
+  }
+
+  .benefit-text_column {
+    font-size: 18px;
+  }
+
+  .benefit-wrapper {
+    padding-top: 60px;
+    padding-bottom: 80px;
+  }
+
+  .partners {
+    padding-bottom: 60px;
+  }
+
+  .video {
+    margin-bottom: 80px;
+  }
+
+  .btn-play svg {
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+  }
+
+  .serv-column__title {
+    font-size: 40px;
+  }
+
+  .serv-item__text {
+    font-size: 18px;
+    line-height: 200%;
+  }
+
+  .about-serv {
+    padding-bottom: 70px;
+  }
+
+  .about-serv::after {
+    transform: translateY(-60%);
+  }
+
+  .record-wrapper {
+    padding: 70px 64px;
+  }
+
+  .record-serv {
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 700px) {
+  .benefit-title {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .benefit_subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .benefit-text_column {
+    text-align: justify;
+  }
+
+  .partners-icons {
+    row-gap: 25px;
+  }
+
+  .video {
+    margin-bottom: 60px;
+  }
+
+  .serv-item__text span {
+    font-size: 16px;
+    line-height: 100%;
+    margin-right: 5px;
+  }
+
+  .serv-column__title {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+
+}
+
+@media (max-width: 700px) {
+  .benefit-wrapper {
+    padding-bottom: 0px;
+  }
+
+  .benefit-text {
+    flex-direction: column;
+  }
+
+  .partners-icons {
+    display: none;
+  }
+
+  .portf-descr__title {
+    font-size: 25px;
+  }
+
+  .portf-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+    margin-bottom: 50px;
+  }
+
+  .about-serv {
+    flex-direction: column;
+  }
+  .about-serv::after {
+    width: 0;
+    height: 0;
+}
+  .serv-portf-descr {
+    height: 100%;
+  }
+
+  .btn-play svg {
+    height: 60px;
+    width: 60px;
+  }
+
+  .video-wrapper {
+    border-radius: 30px;
+  }
+  .work-left__btn {
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
 
 
 
